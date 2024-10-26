@@ -1,0 +1,96 @@
+@font-face {
+  font-family: myFont;
+  src: url('../fonts/Norwill.otf');
+}
+
+body {
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: contain;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+  text-shadow: 2px 2px 5px rgba(83, 83, 83, 0.7);
+}
+
+p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: myFont;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+p {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.btn-custom {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgba(48, 94, 128, 255);
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px #000;
+  transition: all 0.3s ease;
+  width: 150px;
+  padding: 10px;
+
+}
+
+.btn-custom:hover {
+  font-size: 15px;
+  color: #000;
+  background-color: #ffffff;
+  color: rgba(48, 94, 128, 255);
+  border: 2px solid rgba(48, 94, 128, 255);
+  box-shadow: 5px 5px 0px rgba(48, 94, 128, 255);
+}
+
+.btn-custom:active {
+  background-color: #fcf414;
+  box-shadow: none;
+  transform: translateY(4px);
+
+}
+
+
+.message-container {
+  background: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent background */
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+  max-width: 1020px;
+  /* Maximum width for larger screens */
+  margin: auto;
+  /* Center the message container */
+}
+
+
+@media (max-width:320px) {
+  #message {
+    font-size: 20px;
+  }
+
+  #sportDescription {
+    font-size: 15px;
+  }
+}
