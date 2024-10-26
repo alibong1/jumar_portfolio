@@ -64,6 +64,7 @@ body {
     box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff; /* Inset neumorphism effect */
     margin-top: 20px;
     transition: background-color 0.3s ease;
+    width: 130px;
 }
 
 .know-more:hover {
