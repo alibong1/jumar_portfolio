@@ -1,0 +1,194 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #e0e0e0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.outer-box {
+    background: #e0e0e0;
+    border-radius: 20px;
+    box-shadow: 8px 8px 15px #bebebe, -8px -8px 15px #ffffff; /* Neumorphic shadows */
+    padding: 30px;
+    width: 90%;
+    max-width: 650px;
+}
+
+.card {
+    display: flex;
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    padding: 5%;
+    box-shadow: 8px 8px 15px #bebebe, -8px -8px 15px #ffffff; /* Neumorphic effect for the card */
+    overflow: hidden;
+    flex-wrap: wrap; /* Allow content to wrap */
+}
+
+.card-content {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.name {
+    font-size: calc(1rem + 1vw); /* Responsive font size */
+    font-weight: bold;
+}
+
+.course {
+    font-size: calc(0.8rem + 0.8vw); /* Responsive font size */
+    margin-bottom: 20px;
+    padding-left: 80px;
+}
+
+.years {
+    line-height: 2;
+}
+
+.know-more {
+    background-color: #e0e0e0;
+    border: none;
+    padding: 0.5em 1em; 
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff; /* Inset neumorphism effect */
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.know-more:hover {
+    background-color: #c9c3c3; /* Slight hover effect */
+}
+
+/* Neumorphic box for profile picture, phone, and email */
+.profile-contact-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    box-shadow: 8px 8px 15px #bebebe, -8px -8px 15px #ffffff; /* Neumorphic shadow for the whole box */
+    padding: 20px;
+    width: 100%;
+    max-width: 250px;
+    margin-left: 20px;
+}
+
+.profile-picture {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 8px 8px 15px #bebebe, -8px -8px 15px #ffffff; /* Neumorphic shadow for the picture */
+    margin-bottom: 20px;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+/* Align phone and email icons with their text */
+.contact-info .phone,
+.contact-info .email {
+    display: flex;
+    align-items: center; /* Align icon and text vertically */
+    justify-content: flex-start; /* Keep icons and text aligned to the left */
+    gap: 10px; /* Add space between icon and text */
+    margin-bottom: 10px;
+}
+
+/* Box around the icon */
+.icon-box {
+    width: 40px;
+    height: 40px;
+    background-color: #e0e0e0;
+    border-radius: 20px; /* Rounded box */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff; /* Neumorphic shadow for the icon box */
+}
+
+.contact-info img {
+    width: 20px;
+}
+
+/* Media Query for responsive design */
+@media (max-width: 1024px) {
+    .outer-box {
+        padding: 20px;
+    }
+
+    .profile-contact-box {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .know-more {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-contact-box {
+        margin-top: 20px;
+    }
+
+    .know-more {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .name {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+
+    .outer-box {
+        padding: 10px;
+    }
+
+    .card-content {
+        padding: 10px;
+    }
+
+    .course {
+        font-size: 1rem; /* Smaller font for the course title */
+        padding-left: 0; /* Adjust padding for smaller screens */
+    }
+
+    .profile-contact-box {
+        padding: 10px;
+        max-width: 200px; /* Make the contact box smaller on mobile */
+    }
+
+    .profile-picture {
+        max-width: 150px;
+    }
+}
